@@ -1742,8 +1742,14 @@ img {
     }
     
     .about-code pre {
-        overflow-x: auto;
+        white-space: pre-wrap; /* Forces the long code to wrap instead of horizontal scroll */
+        word-break: break-word;
         font-size: 13px;
+    }
+    
+    .about-terminal {
+        max-width: 100%;
+        width: 100%;
     }
     
     .skills-grid {
